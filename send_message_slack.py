@@ -7,14 +7,14 @@ SLACK_BOT_TOKEN = ''
 # Channel ID
 CHANNEL_ID = ''
 def send_message():
-    url = 'https://slack.com/api/chat.postMesage'
+    url = 'https://slack.com/api/chat.postMessage'
     headers = {
         'Content-Type': 'application/json',
         'Authorization': f'Bearer {SLACK_BOT_TOKEN}'
     }
     data = {
         'channel': {CHANNEL_ID},
-        'text': 'Good morning Support Team! Have conference rooms been checked this morning?'
+        'text': 'Message Here!'
     }
 # Schedule send at 830AM
 while True:
